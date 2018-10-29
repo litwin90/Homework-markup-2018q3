@@ -1,0 +1,59 @@
+html {
+	font-size: 10px;
+}
+
+/**Class for content**/
+.wraper {
+	margin: 0 auto;
+	box-sizing: border-box;
+	max-width: 1300px;
+
+	padding: 0 50px 0 50px;
+}
+
+/** HEADER **/
+header {
+	background: rgb(0, 0, 0);
+	background-image: url("../img/Header-BG.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+header .color-overlay {
+	width: 100%;
+	min-height: auto;
+
+	background: rgba(0, 0, 0, 0.83);
+}
+
+/**Header menu**/
+nav.menu {
+	width: 100%;
+	height: auto;
+	max-height: 90px;
+	box-sizing: border-box;
+	margin: 0 1px 0 1px;
+
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav.menu a {
+	margin: 37px 0 38px 68.5px;
+	float: right;
+
+	height: 89px;
+
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "Lato Medium", "Arial", sans-serif;
+	font-size: 1.6rem;
+}
+
+nav.menu img {
+	margin: 32px 0 28px 0;
+	padding-left: 3px;
+}
+
+.clearfix {
+	clear: both;
+}
