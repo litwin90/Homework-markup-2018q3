@@ -15,7 +15,6 @@ header {
 	position: relative;
 	min-height: 1064px;
 	background: rgb(0, 0, 0);
-	margin-bottom:70px;
 }
 
 .background-image {
@@ -178,4 +177,108 @@ section.login-register a.register {
 	float: right;
 	width: 51.12%;
 	height: 100%;
+}
+
+/** MAIN **/
+main {
+	background-color: #ffffff;
+}
+
+/** DOMAIN section **/
+section.domain h3 {
+	margin: 85px auto 0 auto;
+	font-family: "Lato Heavy", "Arial", sans-serif;
+	color: #383737;
+	font-size: 2.4rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+section.domain p {
+	margin: 23px auto 0 auto;
+	font-family: "Montserrat Ultra Light", "Arial", sans-serif;
+	color: #a2a2a2;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+section.domain form {
+	position: relative;
+	width: 80%;
+	max-width: 889px;
+	height: 50px;
+	margin: 48px auto 0 auto;
+	box-sizing: border-box;
+	display: table;
+
+	border: 1px solid #d9d9d9;
+	border-collapse: separate;
+	border-spacing: 8px;
+	font-size: 0;
+}
+
+section.domain form input:nth-child(1) {
+	float: left;
+	width: 7.5%;
+	min-width: 52px;
+	max-width: 63px;
+	box-sizing: border-box;
+
+	padding-left: 0.7rem;
+	border: none;
+	border-right: 1px solid #d9d9d9;
+	background-color: #ffffff;
+
+	vertical-align: middle;
+	line-height: 30px;
+	font-family: "Lato Regular", "Arial", sans-serif;
+	font-size: 1.6rem;
+	color: #cbcbcb;
+}
+
+section.domain form input:nth-child(2) {
+	position: relative;
+	width: 60%;
+	max-width: 732px;
+
+	box-sizing: border-box;
+	border: none;
+
+	padding-left: 1.6rem;
+	vertical-align: middle;
+	line-height: 30px;
+	font-family: "Lato Semibold", "Arial", sans-serif;
+	font-size: 1.5rem;
+	color: #868686;
+}
+
+section.domain form select {
+	position: relative;
+
+	float: right;
+	width: 78px;
+	height: 32px;
+	vertical-align: top;
+
+	padding-left: 1.5rem;
+	padding-bottom: 0.4rem;
+	border: none;
+	border-left: 1px solid #d9d9d9;
+
+	font-family: "Lato Regular", "Arial", sans-serif;
+	font-size: 1.6rem;
+	color: #cbcbcb;
+	cursor: pointer;
+}
+
+section.domain form::after {
+	position: absolute;
+	right: 1.5rem;
+	bottom: 1.9rem;
+	z-index: 2;
+	font-family: "FontAwesome", "Arial", sans-serif;
+	content: "\f107";
+	font-size: 1.1rem;
+	font-weight: bolder;
+	color: #cbcbcbbf;
 }
