@@ -274,11 +274,99 @@ section.domain form select {
 section.domain form::after {
 	position: absolute;
 	right: 1.5rem;
-	bottom: 1.9rem;
+	bottom: 1.8rem;
 	z-index: 2;
 	font-family: "FontAwesome", "Arial", sans-serif;
 	content: "\f107";
 	font-size: 1.1rem;
 	font-weight: bolder;
 	color: #cbcbcbbf;
+}
+
+/** DOMAIN TABLE **/
+section.domain .table-wraper {
+	max-height: 288px;
+	overflow: hidden;
+	margin: 40px auto 91px auto;
+	border: 1px solid #d9d9d9;
+	width: 80%;
+	max-width: 889px;
+	box-sizing: border-box;
+}
+
+section.domain .table {
+	display: table;
+	width: 100%;
+	max-width: 889px;
+	box-sizing: border-box;
+	table-layout: fixed;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	display: table-cell;
+	position: relative;
+	width: 25%;
+	height: 96px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Lato Regular", "Arial", sans-serif;
+	font-size: 1.4rem;
+	color: #cbcbcb;
+}
+
+.table-cell::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 2.93%;
+	right: 2.93%;
+	width: 94.14%;
+	height: 1px;
+	background-color: #d9d9d9;
+}
+
+.table-cell:first-child::before {
+	width: 85.4%;
+	right: 3.6%;
+	left: 12%;
+}
+
+.table-cell:last-child::before {
+	width: 82.4%;
+	left: 3.2%;
+}
+
+.table-row:last-child .table-cell::before {
+	display: none;
+}
+
+.table-cell::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 3px;
+	bottom: 3px;
+	width: 1px;
+	height: 89px;
+	background-color: #d9d9d9;
+}
+
+.table-row:first-child .table-cell::after {
+	height: 74px;
+	top: 17px;
+	bottom: 6px;
+}
+
+.table-row:last-child .table-cell::after {
+	height: 74px;
+	top: 6px;
+	bottom: 0;
+}
+
+.table-cell:last-child::after {
+	display: none;
 }
