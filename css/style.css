@@ -1,5 +1,20 @@
 html {
 	font-size: 10px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex-shrink: 0;
 }
 
 /**Class for content**/
@@ -13,7 +28,6 @@ html {
 /** HEADER **/
 header {
 	position: relative;
-	min-height: 1064px;
 	background: rgb(0, 0, 0);
 }
 
@@ -53,7 +67,7 @@ nav.menu li:hover {
 	cursor: pointer;
 }
 
-nav.menu li:hover::after {
+header nav.menu li:hover::after {
 	position: relative;
 	top: 34px;
 	content: "";
@@ -103,6 +117,7 @@ header h2 {
 }
 
 header h2:last-child {
+	margin-bottom: 102px;
 	padding-bottom: 358px;
 }
 
@@ -368,3 +383,218 @@ section.domain .table {
 .table-cell:last-child::after {
 	display: none;
 }
+
+/** FOOTER **/
+footer {
+	background-color: #2a2a2a;
+}
+
+/** FOOTER NAV **/
+footer nav.menu ul.float-container {
+	padding-top: 8px;
+}
+
+footer nav.menu li {
+	margin-left: 5.1%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+footer nav.menu img {
+	margin: 23px 0 21px 0;
+	padding-left: 1px;
+	opacity: 0.5;
+}
+
+footer nav.menu a {
+	color: #686868;
+	font-family: "Lato Regular", "Arial", sans-serif;
+	font-size: 1.3rem;
+}
+
+footer nav.menu li:hover a {
+	color: #ffffff;
+}
+
+
+/** FOOTER BOTTOM **/
+section.footer-bottom {
+	display: flex;
+	margin: 34px 0;
+	justify-content: start;
+	flex-wrap: wrap;
+}
+
+
+/** LEFT BLOCK **/
+section.footer-bottom div.left {
+	width: 31.58333%;
+	min-width: 170px;
+	box-sizing: border-box;
+	padding-left: 0.2rem;
+	border-right: 1px solid rgba(104, 104, 104, 0.3);
+}
+
+section.footer-bottom div.left p {
+	margin-right: 21.16%;
+
+	color: rgb(104, 104, 104);
+	font-family: "Lato Light", "Arial", sans-serif;
+	font-size: 1.5rem;
+	line-height: 2.6rem;
+}
+
+section.footer-bottom div.left p:first-child {
+	margin-top: 15px;
+}
+
+section.footer-bottom div.left address {
+	display: inline-block;
+	margin-right: 21.16%;
+	color: rgb(104, 104, 104);
+	font-family: "Lato Bold", "Arial", sans-serif;
+	font-size: 1.5rem;
+	line-height: 2.6rem;
+	font-style: normal;
+}
+
+section.footer-bottom div.left p:nth-child(2) {
+	display: inline-block;
+	margin-top: 13px;
+	margin-right: 4px;
+}
+
+
+/** CENTRAL BLOCK **/
+section.footer-bottom div.center {
+	box-sizing: border-box;
+	width: 42%;
+	min-height: 150px;
+	min-width: 170px;
+	border-right: 1px solid rgba(104, 104, 104, 0.3);
+	padding-left: 4.7%;
+}
+
+div.center ul {
+	display: inline-block;
+	width: 25.79%;
+	min-width: 130px;
+	margin-top: 16px;
+	list-style: none;
+}
+
+div.center ul li {
+	min-width: 130px;
+}
+
+div.center ul li:hover a {
+	color: white;
+}
+
+div.center ul:first-child {
+	margin-left: 11%;
+}
+
+div.center ul:last-child {
+	margin-left: 12%;
+}
+
+div.center ul a {
+	text-decoration: none;
+	padding-left: 0.3rem;
+	color: rgb(104, 104, 104);
+	font-family: "Lato Light", "Arial", sans-serif;
+	font-size: 1.5rem;
+	line-height: 2.912rem;
+	font-style: normal;
+}
+
+div.center ul a::before {
+	font-family: "FontAwesome", "Arial", sans-serif;
+	content: "\f105";
+	padding-right: 0.8rem;
+}
+
+div.center ul li:hover a::before {
+	padding-right: 1.6rem;
+}
+
+
+/** RIGHT BLOCK **/
+section.footer-bottom div.right {
+	box-sizing: border-box;
+	width: 19.5833%;
+	min-height: 150px;
+	min-width: 150px;
+	margin-left: 6.75%;
+	padding-left: 0.2rem;
+	overflow: hidden;
+}
+
+section.footer-bottom div.right a {
+	text-decoration: none;
+	line-height: 3rem;
+	color: rgb(104, 104, 104);
+	font-family: "Lato Light", "Arial", sans-serif;
+	font-size: 1.5rem;
+	font-style: normal;
+}
+
+section.footer-bottom div.right .footer-phone {
+	min-width: 138px;
+}
+
+section.footer-bottom div.right .footer-phone a {
+	position: relative;
+	font-family: "Lato Semibold", "Arial", sans-serif;
+	font-size: 1.4rem;
+}
+
+section.footer-bottom div.right .footer-phone:hover a,
+section.footer-bottom div.right .footer-phone:hover::before {
+	color: white;
+}
+
+section.footer-bottom div.right .footer-phone::before {
+	padding-left: 0.1rem;
+	font-family: "FontAwesome", "Arial", sans-serif;
+	content: "\f095";
+	padding-right: 0.9rem;
+}
+
+section.footer-bottom div.right .footer-email a {
+	letter-spacing: -0.2px;
+}
+
+section.footer-bottom div.right .footer-email {
+	min-width: 233px;
+}
+
+section.footer-bottom div.right .footer-email::before {
+	font-family: "FontAwesome", "Arial", sans-serif;
+	font-size: 1.4rem;
+	content: "\f0e0";
+	padding-right: 0.6rem;
+}
+
+section.footer-bottom div.right .footer-email:hover a,
+section.footer-bottom div.right .footer-email:hover::before {
+	color: white;
+}
+
+section.footer-bottom div.right address {
+	margin-top: 15px;
+	line-height: 2.9rem;
+	color: rgb(104, 104, 104);
+	font-family: "Lato Light", "Arial", sans-serif;
+	font-size: 1.5rem;
+	font-style: normal;
+}
+
+section.footer-bottom div.right div.footer-phone:hover a,
+section.footer-bottom div.right div.footer-email:hover a,
+section.footer-bottom div.right div.footer-email:hover i,
+section.footer-bottom div.right div.footer-phone:hover i {
+	color: white;
+}
+
