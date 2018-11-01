@@ -140,8 +140,7 @@ section.login-register .wraper {
 
 section.login-register div.wraper a {
 	position: absolute;
-	top: 2px;
-	display: inline-block;
+	top: 0;
 	width: 46.2%;
 	text-align: center;
 	vertical-align: middle;
@@ -382,6 +381,240 @@ section.domain .table {
 
 .table-cell:last-child::after {
 	display: none;
+}
+
+/** PACKAGES **/
+.packages .packages-bg-image {
+	background-image: url("../img/Packages-BG.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	min-height: 383px;
+}
+
+.packages .wraper {
+	max-height: 4760px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+	top: -283px;
+	margin-bottom: -183px;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.packages .package {
+	margin-top: 30px;
+	box-sizing: border-box;
+	width: 21.167%;
+	min-width: 205px;
+	min-height: 565px;
+	max-height: 800px;
+	padding-left: 27px;
+	padding-right: 27px;
+	background-color: white;
+	border-top: 5px solid #7f8c8d;
+	-moz-box-shadow: 0 3px 8px  rgba(241, 241, 241, 1);
+	box-shadow: 0 3px 8px  rgba(241, 241, 241, 1);
+}
+
+/** PACKAGE HEADER **/
+.packages .package header {
+	min-height: 107px;
+	max-height: 250px;
+	background-color: white;
+	border-bottom: 1px solid rgb(223, 223, 223);
+	padding-top: 36px;
+}
+
+.packages .package header h4 {
+	margin: 16px auto 18px auto;
+	text-align: center;
+	font-family: "Lato Bold", "Arial", sans-serif;
+	font-size: 1.6rem;
+}
+
+
+/** PACKAGE MAIN **/
+.packages .package main {
+	padding-bottom: 13px;
+	border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.packages .package main p {
+	padding: 1.6rem 0 0.345rem 0;
+	font-family: "Lato Light", "Arial", sans-serif;
+	font-size: 1.6rem;
+	color: #b4b4b4;
+}
+
+
+.packages .package main p.cuantity {
+	font-family: "Lato Semibold", "Arial", sans-serif;
+	float: right;
+	color: #7f8c8d;
+}
+
+/** PACKAGE FOOTER **/
+.packages .package footer {
+	background-color: #ffffff;
+}
+
+.packages .package footer p:first-child {
+	height: 35px;
+	max-width: 33.5%;
+	margin: 28px auto 0 auto;
+
+	padding: 0 19px;
+	font-family: "Lato Bold", "Arial", sans-serif;
+	font-size: 2.77rem;
+	color: #2c2c2c;
+
+	border-bottom: 3px solid #7f8c8d;
+}
+
+.packages .package footer p span:first-child {
+	position: relative;
+	bottom: 7px;
+	right: 1px;
+	font-family: "Lato Heavy", "Arial", sans-serif;
+	font-size: 1.68rem;
+}
+
+.packages .package footer p span:last-child {
+	font-family: "Lato Regular", "Arial", sans-serif;
+	font-size: 1.3rem;
+	color: #8d8d8d;
+}
+
+.packages .package footer p:last-child {
+	margin: -4px auto;
+
+	padding: 2rem;
+	text-align: center;
+	font-family: "Lato Bold", "Arial", sans-serif;
+	font-size: 1.6rem;
+	color: #2c2c2c;
+}
+
+
+/** BAR **/
+.bar {
+	position: relative;
+	width: 54px;
+	margin: 0 auto;
+}
+
+.bar::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+	font-family: "FontAwesome", "Arial", sans-serif;
+	color: #8d8d8d;
+	font-size: 1.7rem;
+}
+
+.anchor .bar::after {
+	content: "\f13d";
+}
+
+.half-star .bar::after {
+	content: "\f123";
+}
+
+.star .bar::after {
+	content: "\f005";
+}
+
+.diamond .bar::after {
+	content: "\f219";
+}
+
+.circular-chart {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 55px;
+}
+
+.circle {
+	stroke: #7f8c8d;
+	fill: none;
+	stroke-width: 4;
+	stroke-linecap: round;
+	stroke-dasharray: 100, 100;
+	animation: progress 1s ease-out forwards;
+}
+
+path.one-quarter {
+	stroke-dasharray: 25, 100;
+}
+
+path.two-quarter {
+	stroke-dasharray: 50, 100;
+}
+
+path.three-quarter {
+	stroke-dasharray: 75, 100;
+}
+
+/** YELLOW **/
+.packages .package.yellow {
+	border-top: 5px solid #f9d423;
+}
+
+.packages .package.yellow main p.cuantity,
+.yellow .bar::after {
+	color: #f9d423;
+}
+
+.packages .package.yellow footer p:first-child {
+	border-bottom: 3px solid #f9d423;
+}
+
+.yellow .circle {
+	stroke: #f9d423;
+}
+
+
+/** RED **/
+.packages .package.red {
+	border-top: 5px solid #f85f40;
+}
+
+.packages .package.red main p.cuantity,
+.red .bar::after {
+	color: #f85f40;
+}
+
+.packages .package.red footer p:first-child {
+	border-bottom: 3px solid #f85f40;
+}
+
+.red .circle {
+	stroke: #f85f40;
+}
+
+/** BLUE **/
+.packages .package.blue {
+	border-top: 5px solid #1abc9c;
+}
+
+.packages .package.blue main p.cuantity,
+.blue .bar::after {
+	color: #1abc9c;
+}
+
+.packages .package.blue footer p:first-child {
+	border-bottom: 3px solid #1abc9c;
+}
+
+.blue .circle {
+	stroke: #1abc9c;
 }
 
 /** FOOTER **/
