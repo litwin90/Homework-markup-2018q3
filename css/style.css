@@ -416,8 +416,14 @@ section.domain .table {
 	padding-right: 27px;
 	background-color: white;
 	border-top: 5px solid #7f8c8d;
+	cursor: pointer;
 	-moz-box-shadow: 0 3px 8px  rgba(241, 241, 241, 1);
 	box-shadow: 0 3px 8px  rgba(241, 241, 241, 1);
+}
+
+.packages .package:hover {
+	position: relative;
+	top: -5px;
 }
 
 /** PACKAGE HEADER **/
@@ -660,7 +666,7 @@ path.three-quarter {
 	box-sizing: border-box;
 	min-width: 200px;
 	width: 43.41667%;
-	max-width: 521px;
+	max-width: 519px;
 	padding-right: 8.083%;
 	padding-left: 1px;
 }
@@ -683,7 +689,7 @@ path.three-quarter {
 .about-us article:last-child::before {
 	position: absolute;
 	top: 0;
-	left: -2px;
+	left: 0;
 	content: "";
 	display: block;
 	width: 2px;
@@ -703,14 +709,11 @@ path.three-quarter {
 }
 
 .about-us figure {
-	padding-bottom: 120px;
+	padding-bottom: 95px;
 	display: inline-block;
 	margin-left: 14.157%;
 	width: 114px;
 	height: 90px;
-	/* background: #2c3e50; */
-	/* border: 5px solid #e5e5e5; */
-	/* border-radius: 100%; */
 }
 
 .about-us figure img {
@@ -722,9 +725,9 @@ path.three-quarter {
 	border-radius: 100%;
 	cursor: pointer;
 }
- 
+
 .about-us figure img:hover {
-	transform:scale(1.1);
+	transform: scale(1.1);
 }
 
 .about-us figure:hover h5,
@@ -781,6 +784,104 @@ path.three-quarter {
 .about-us figure figcaption a:hover i {
 	color: #1f89ba;
 }
+
+/** SERVICES **/
+.services {
+	background-color: #ffffff;
+}
+
+.services .wraper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-height: 2200px;
+	overflow: hidden;
+	padding-top: 100px;
+}
+
+.services a {
+	text-decoration: none;
+	max-width: 225px;
+	margin-bottom: 94px;
+}
+
+.services h5 {
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 1px;
+	font-family: "Lato Heavy", "Arial", sans-serif;
+	font-size: 1.8rem;
+	color: #303030;
+}
+
+.services p {
+	padding-top: 4px;
+	line-height: 2.2rem;
+	font-family: "Lato Light", "Arial", sans-serif;
+	font-size: 1.6rem;
+	color: #7e7e7e;
+	text-align: center;
+}
+
+.services div.label {
+	position: relative;
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-color: #95a5a6; /** basic color **/
+}
+
+.services div.label:hover {
+	transform: scale(1.25);
+}
+
+/** YELLOW **/
+.services .yellow div.label {
+	background-color: #f1c40f;
+}
+
+/** BLUE **/
+.services .blue div.label {
+	background-color: #0faff1;
+}
+
+/** RED **/
+.services .red div.label {
+	background-color: #f1540f;
+}
+
+
+.services div::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "FontAwesome", "Arial", sans-serif;
+	color: #ffffff;
+	font-size: 2.8rem;
+}
+
+/** COMMENTS **/
+.services .comments div::after {
+	content: "\f086";
+}
+
+/** ARROWS **/
+.services .arrows div::after {
+	content: "\f047";
+}
+
+/** CLOUD **/
+.services .cloud div::after {
+	content: "\f0c2";
+}
+
+/** FLASH **/
+.services .flash div::after {
+	content: "\f0e7 ";
+}
+
 
 /** FOOTER **/
 footer {
@@ -994,4 +1095,3 @@ section.footer-bottom div.right div.footer-email:hover i,
 section.footer-bottom div.right div.footer-phone:hover i {
 	color: white;
 }
-
