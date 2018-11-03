@@ -9,6 +9,7 @@ body {
 	flex-direction: column;
 }
 
+/** Class for stiky footer **/
 .content {
 	flex: 1 0 auto;
 }
@@ -17,7 +18,7 @@ body {
 	flex-shrink: 0;
 }
 
-/**Class for content**/
+/**Class for content aligment**/
 .wraper {
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -31,7 +32,7 @@ header {
 	background: rgb(0, 0, 0);
 }
 
-.background-image {
+header .background-image {
 	background-image: url("../img/Header-BG.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -44,35 +45,40 @@ header .color-overlay {
 
 /**Header menu**/
 nav.menu {
-	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	min-height: 90px;
 	box-sizing: border-box;
 	margin: 0 1px 0 1px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-nav.menu ul.float-container {
-	float: right;
-	padding-top: 34px;
+nav.menu ul {
+	position: relative;
 	width: 70%;
+	padding-top: 35px;
 }
 
 nav.menu li {
 	float: right;
+	height: 10%;
 	margin: 2px 3px 0 7.8%;
-
-	padding-bottom: 32px;
+	padding-bottom: 25px;
 }
 
 nav.menu li:hover {
 	cursor: pointer;
 }
 
-header nav.menu li:hover::after {
-	position: relative;
-	top: 34px;
+header nav.menu li:hover::after,
+header nav.menu li.active::after {
+	position: absolute;
+	bottom: -1px;
 	content: "";
 	display: block;
-	width: 100%;
+	width: 7%;
+	min-width: 55px;
 	height: 1px;
 	background-color: white;
 }
@@ -90,7 +96,7 @@ nav.menu img {
 }
 
 .clearfix::after {
-	display: block;
+	display: none;
 	content: "";
 	clear: both;
 }
@@ -977,6 +983,9 @@ footer {
 }
 
 /** FOOTER NAV **/
+.footer nav {
+	min-height: 77px;
+}
 footer nav.menu ul.float-container {
 	padding-top: 8px;
 }
@@ -984,7 +993,8 @@ footer nav.menu ul.float-container {
 footer nav.menu li {
 	margin-left: 5.1%;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
+	/* height: 10%; */
 }
 
 footer nav.menu img {
