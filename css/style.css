@@ -140,7 +140,6 @@ section.login-register {
 }
 
 section.login-register .wraper {
-	position: relative;
 	top: -123px;
 }
 
@@ -158,12 +157,12 @@ section.login-register div.wraper a {
 }
 
 section.login-register div.wraper a:first-child {
-	left: 0;
+	left: 1.5%;
 	margin-left: 50px;
 }
 
 section.login-register div.wraper a:last-child {
-	right: 0;
+	left: 49.5%;
 	margin-right: 50px;
 }
 
@@ -796,11 +795,6 @@ path.three-quarter {
 .about-us figure figcaption a:first-child i,
 .about-us figure figcaption a:last-child i {
 	font-size: 1.4rem;
-}
-
-.about-us figure:first-child {
-	/* margin-top: -1px; */
-	/* margin-left: 14.157%; */
 }
 
 /** HOVER on Jhonny **/
