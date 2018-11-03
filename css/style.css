@@ -211,6 +211,7 @@ section.domain h3 {
 }
 
 section.domain p {
+	width: 80%;
 	margin: 23px auto 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -385,9 +386,16 @@ section.domain .table {
 
 /** PACKAGES **/
 .packages .packages-bg-image {
-	background-image: url("../img/Packages-BG.jpg");
+	background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2.5px, rgba(0, 0, 0, 0.15) 3.5px, rgba(0, 0, 0, 0) 4.5px, rgba(0, 0, 0, 0) 5.5px),
+		url("../img/Packages-BG.jpg");
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
+	min-height: 383px;
+}
+
+.packages .packages-bg-image .bg-color-owerlay {
+	background-color: rgba(13, 13, 13, 0.7);
+	width: 100%;
 	min-height: 383px;
 }
 
@@ -785,6 +793,86 @@ path.three-quarter {
 	color: #1f89ba;
 }
 
+/** FEEDBACK **/
+.feedback {
+	background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2.5px, rgba(0, 0, 0, 0.15) 3.5px, rgba(0, 0, 0, 0) 4.5px, rgba(0, 0, 0, 0) 5.5px),
+		url("../img/сomments-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-color-owerlay {
+	background-color: rgba(0, 0, 0, 0.72);
+}
+
+.feedback .wraper {
+	padding-bottom: 48px;
+}
+
+.feedback blockquote {
+	width: 74%;
+	margin: 0 auto;
+	padding-top: 45px;
+	text-align: center;
+	font-family: "Lato Light", "Arial", sans-serif;
+	font-size: 2rem;
+	line-height: 3rem;
+	color: #ffffff;
+}
+
+.feedback .slider-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 160px;
+	margin: 16px auto 0 auto;
+	font-size: 0;
+	padding-left: 4px;
+}
+
+.feedback .slider-controls {
+	/* display: inline-block; */
+	width: 62px;
+	height: 100%;
+}
+
+.feedback cite {
+	position: relative;
+	padding-right: 13px;
+	text-align: center;
+	font-family: "Lato Bold", "Arial", sans-serif;
+	font-size: 2rem;
+	line-height: 2rem;
+	color: #ffffff;
+	font-style: normal;
+}
+
+.feedback cite::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+	content: "";
+	width: 1px;
+	height: 16px;
+	background-color: #ffffff;
+}
+
+.feedback .control {
+	margin-left: 12px;
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	box-sizing: border-box;
+	border: 1px solid #ffffff;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.feedback .control.active {
+	background-color: #ffffff;
+}
+
 /** SERVICES **/
 .services {
 	background-color: #ffffff;
@@ -796,7 +884,7 @@ path.three-quarter {
 	justify-content: space-between;
 	max-height: 2200px;
 	overflow: hidden;
-	padding-top: 100px;
+	padding-top: 99px;
 }
 
 .services a {
@@ -1005,6 +1093,7 @@ div.center ul a {
 	font-size: 1.5rem;
 	line-height: 2.912rem;
 	font-style: normal;
+	cursor: pointer;
 }
 
 div.center ul a::before {
