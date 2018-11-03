@@ -655,6 +655,8 @@ path.three-quarter {
 }
 
 .about-us .wraper-1200 {
+	display: flex;
+	flex-wrap: wrap;
 	position: relative;
 	padding-top: 110px;
 	font-size: 0;
@@ -712,8 +714,12 @@ path.three-quarter {
 }
 
 .about-us article:last-child {
+	padding-left: 8%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	position: relative;
-	width: 55.334%;
+	width: 47.334%;
 	min-width: 200px;
 	max-height: 1240px;
 	overflow: hidden;
@@ -725,7 +731,7 @@ path.three-quarter {
 .about-us figure {
 	padding-bottom: 95px;
 	display: inline-block;
-	margin-left: 14.157%;
+	/* margin-left: 14.157%; */
 	width: 114px;
 	height: 90px;
 }
@@ -741,6 +747,8 @@ path.three-quarter {
 }
 
 .about-us figure img:hover {
+	position: relative;
+	top: 6px;
 	transform: scale(1.1);
 }
 
@@ -754,6 +762,7 @@ path.three-quarter {
 }
 
 .about-us figure figcaption h5 {
+	min-width: 115px;
 	margin-top: 12px;
 	font-family: "Lato Semibold", "Arial", sans-serif;
 	font-size: 1.7rem;
@@ -790,8 +799,8 @@ path.three-quarter {
 }
 
 .about-us figure:first-child {
-	margin-top: -1px;
-	margin-left: 14.157%;
+	/* margin-top: -1px; */
+	/* margin-left: 14.157%; */
 }
 
 /** HOVER on Jhonny **/
@@ -986,6 +995,7 @@ footer {
 .footer nav {
 	min-height: 77px;
 }
+
 footer nav.menu ul.float-container {
 	padding-top: 8px;
 }
