@@ -30,6 +30,11 @@ body {
 	padding: 0 50px 0 50px;
 }
 
+main h2,
+footer h2 {
+	display: none;
+}
+
 /** HEADER **/
 header {
 	position: relative;
@@ -145,6 +150,10 @@ section.login-register {
 
 section.login-register .wraper {
 	top: -123px;
+}
+
+section.login-register h2 {
+	display: none;
 }
 
 section.login-register div.wraper a {
@@ -461,12 +470,12 @@ section.domain .table {
 
 
 /** PACKAGE MAIN **/
-.packages .package main {
+.packages .package .package-main {
 	padding-bottom: 13px;
 	border-bottom: 1px solid rgb(223, 223, 223);
 }
 
-.packages .package main p {
+.packages .package .package-main p {
 	padding: 1.6rem 0 0.345rem 0;
 	font-family: "Lato Light", "Arial", sans-serif;
 	font-size: 1.6rem;
@@ -474,7 +483,7 @@ section.domain .table {
 }
 
 
-.packages .package main p.cuantity {
+.packages .package .package-main p.cuantity {
 	font-family: "Lato Semibold", "Arial", sans-serif;
 	float: right;
 	color: #7f8c8d;
@@ -592,7 +601,7 @@ path.three-quarter {
 	border-top: 5px solid #f9d423;
 }
 
-.packages .package.yellow main p.cuantity,
+.packages .package.yellow .package-main p.cuantity,
 .yellow .bar::after {
 	color: #f9d423;
 }
@@ -611,7 +620,7 @@ path.three-quarter {
 	border-top: 5px solid #f85f40;
 }
 
-.packages .package.red main p.cuantity,
+.packages .package.red .package-main p.cuantity,
 .red .bar::after {
 	color: #f85f40;
 }
@@ -629,7 +638,7 @@ path.three-quarter {
 	border-top: 5px solid #1abc9c;
 }
 
-.packages .package.blue main p.cuantity,
+.packages .package.blue .package-main p.cuantity,
 .blue .bar::after {
 	color: #1abc9c;
 }
