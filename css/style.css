@@ -117,6 +117,18 @@ nav.menu img {
 
 /** Header Headings **/
 header h1 {
+	max-height: 89px;
+}
+
+header h1 * {
+	display: none;
+}
+
+header h1 img {
+	display: block;
+}
+
+header h2 {
 	margin: 325px auto 6px auto;
 
 	font-size: 7.2rem;
@@ -125,7 +137,7 @@ header h1 {
 	color: #ffffff;
 }
 
-header h2 {
+header p {
 	margin: 0 auto;
 	padding: 0 1rem;
 
@@ -138,7 +150,7 @@ header h2 {
 	color: #ffffff;
 }
 
-header h2:last-child {
+header p:last-child {
 	margin-bottom: 102px;
 	padding-bottom: 358px;
 }
